@@ -1,14 +1,14 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <page-home></page-home> <!-- Using component defined in the <script> section -->
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PageHome from '@/components/PageHome.vue' // Import custom components from file
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PageHome // Make custom components available in Vue
   }
 }
 </script>
