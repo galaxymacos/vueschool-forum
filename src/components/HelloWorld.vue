@@ -27,14 +27,27 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
+    <!--HTML naturally supports JSON data-->
+    <div>{{ threads }}</div>
   </div>
 </template>
 
 <script>
+// Three ways to represent paths:
+// 1. @/data.json (@ represents src)
+// 2. ../data.json (one level up)
+// 3. /src/data.json (absolute path, against the eslint rules)
+import sourceData from '../data.json'
+console.log(sourceData)
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  data () { // data is a function, and it returns an object, which declares variables for html to reference
+    return {
+      threads: sourceData.threads
+    }
   }
 }
 </script>
