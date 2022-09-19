@@ -1,6 +1,8 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <page-home></page-home> <!-- Using component defined in the <script> section -->
+  <div class="container">
+    <page-home/> <!-- Using component defined in the <script> section -->
+  </div>
 </template>
 
 <script>
