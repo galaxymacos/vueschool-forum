@@ -1,5 +1,4 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
   <div class="container">
     <page-home/> <!-- Using component defined in the <script> section -->
   </div>
@@ -16,12 +15,8 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+/* Import CSS from src, and the Vue-CLI css-loaders made it lighter (about 25%) */
+@import "assets/style.css";
+/* Import third-party CSS from node_modules */
+/*@import "~bootstrap/dist/css/bootstrap.css";*/
 </style>
